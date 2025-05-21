@@ -43,9 +43,8 @@ jobs:
 
       - name: Tag Docker image
         run: |
-          docker tag app:1.0.0 ${{ steps.login-ecr.outputs.registry }}/app01:1.0.0
+          docker tag app01:1.0.0 ${{ steps.login-ecr.outputs.registry }}/app01:1.0.0
 
-          
       - name: Push Docker image to ECR
         run: |
           docker push ${{ steps.login-ecr.outputs.registry }}/app01:1.0.0
