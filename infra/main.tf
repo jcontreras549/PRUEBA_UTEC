@@ -5,6 +5,7 @@ module "ecr_repo" {
   image_mutability = "IMMUTABLE"
 }
 
+
 # module "ec2" {
 #   source             = "../modules/ec2"
 #   ami                = "ami-0c02fb55956c7d316"
