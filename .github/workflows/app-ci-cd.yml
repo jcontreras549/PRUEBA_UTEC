@@ -4,6 +4,11 @@ on:
   push:
     paths:
       - 'app/**'
+      
+  workflow_run:
+    workflows: ["Terraform Dev Only"]
+    types:
+      - completed
 
 jobs:
   build-and-test:
