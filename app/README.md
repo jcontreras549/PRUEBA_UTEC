@@ -7,4 +7,4 @@
 
 # Configure kubectl to Use the EKS Cluster
 
-```aws eks --region ca-central-1 update-kubeconfig --name utec-cluster-v2``` 
+```aws eks --region ca-central-1 update-kubeconfig --name utec-cluster-v2```
