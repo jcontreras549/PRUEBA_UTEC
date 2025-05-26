@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    uses: jcontreras549/devsecops_template/.github/workflows/ci-cd-app.yml@main
+    uses: jcontreras549/devsecops_template/.github/workflows/ci-cd-java.yml@main
     permissions:
       contents: read
     secrets: inherit
