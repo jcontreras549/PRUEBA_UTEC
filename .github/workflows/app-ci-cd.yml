@@ -3,7 +3,7 @@ name: Build & Test Spring Boot App
 on:
   push:
     paths:
-      - 'app/**'
+      - 'modules/**'
 
   # workflow_run:
   #   workflows: ["Provision Infrastructure"]
