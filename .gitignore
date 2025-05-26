@@ -8,6 +8,7 @@ override.tf
 override.tf.json
 terraform.tfvars.json
 .terraform.lock.hcl
+
 # Excluye archivos de plan
 *.tfplan
 
@@ -27,3 +28,6 @@ target/
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Ignorar la carpeta modules
+/modules/
