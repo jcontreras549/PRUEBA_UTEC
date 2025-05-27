@@ -12,4 +12,4 @@ tags = {
   Environment = "LAB"
 }
 
-name_sg       = "ec2-default-sg-jcontreras"
+name_sg       = "ec2-default-sg-jcontreras_v2"
