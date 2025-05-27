@@ -7,8 +7,7 @@ terraform {
 }
 
 module "ecr_repo" {
-  source           = "../modules/ecr"
-  #source          = "git::https://github.com/jcontreras549/MODULE_ECR_AWS.git?ref=main"
+  source          = "git::https://github.com/jcontreras549/MODULE_ECR_AWS.git?ref=main"
   ecr_name         = var.ecr_names
   tags             = var.tags
   image_mutability = "IMMUTABLE"
@@ -35,8 +34,7 @@ resource "aws_security_group" "default" {
 }
 
 module "ec2" {
-  source             = "../modules/ec2"
-  #source          = "git::https://github.com/jcontreras549/MODULE_EC2_AWS.git?ref=main"
+  source          = "git::https://github.com/jcontreras549/MODULE_EC2_AWS.git?ref=main"
   ami                = "ami-0c02fb55956c7d316"
   instance_type      = "t3.micro"
   subnet_id          = var.public_subnet_id
@@ -49,8 +47,7 @@ module "ec2" {
 }
 
 module "eks" {
-  source = "../modules/eks"
-  #source          = "git::https://github.com/jcontreras549/MODULE_EKS_AWS.git?ref=main"
+  source          = "git::https://github.com/jcontreras549/MODULE_EKS_AWS.git?ref=main"
 
   cluster_name    = var.cluster_name
   cluster_version = var.cluster_version
