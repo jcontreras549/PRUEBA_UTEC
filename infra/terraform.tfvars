@@ -11,3 +11,5 @@ tags = {
   Name        = "UTEC"
   Environment = "LAB"
 }
+
+name_sg       = "ec2-default-sg-jcontreras"

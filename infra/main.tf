@@ -14,7 +14,7 @@ module "ecr_repo" {
 }
 
 resource "aws_security_group" "default" {
-  name        = "ec2-default-sg-jcontreras"
+  name        = var.name_sg
   description = "Default security group for EC2"
   vpc_id      = var.vpc_id
 

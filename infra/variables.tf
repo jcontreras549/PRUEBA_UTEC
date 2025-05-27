@@ -50,3 +50,8 @@ variable "ecr_names" {
   description = "Lista de nombres para los repositorios ECR"
   type        = list(string)
 }
+
+variable "name_sg" {
+  description = "Nombre de la instancia EC2"
+  type        = string
+}
