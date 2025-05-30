@@ -5,6 +5,14 @@ on:
     paths:
       - 'infra/**'
 
+  workflow_dispatch:
+    inputs:
+      destroy:
+        description: 'Run destroy?'
+        required: true
+        default: false
+        type: boolean
+
 jobs:
   build-and-deploy:
     uses: jcontreras549/devsecops_template/.github/workflows/terraform_provisioning.yml@main
