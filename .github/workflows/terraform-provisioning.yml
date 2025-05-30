@@ -12,4 +12,4 @@ jobs:
       contents: read
     secrets: inherit
     with:
-      destroy: false
+      destroy: true
